@@ -1,0 +1,12 @@
+<Configuration ID="64957de8-f3a9-4545-a7e5-9326cfc18bbd">
+  <Info Description="" />
+  <Add OfficeClientEdition="64" Channel="Current" OfficeMgmtCOM="TRUE" MigrateArch="TRUE">
+    <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="Bing" />
+    </Product>
+  </Add>
+  <Display Level="None" AcceptEULA="FALSE" />
+</Configuration>
