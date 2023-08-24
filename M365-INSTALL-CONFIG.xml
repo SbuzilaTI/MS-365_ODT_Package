@@ -1,8 +1,9 @@
-<Configuration ID="4e86af43-e55a-4e6b-82c5-e1372034ed43">
+<Configuration ID="80d95381-9cf3-4d42-9e58-aae9988f04ea">
   <Info Description="" />
-  <Add OfficeClientEdition="64" Channel="MonthlyEnterprise" MigrateArch="TRUE">
+  <Add OfficeClientEdition="64" Channel="Current" OfficeMgmtCOM="TRUE" MigrateArch="TRUE">
     <Product ID="O365ProPlusRetail">
       <Language ID="MatchOS" />
+      <Language ID="MatchPreviousMSI" />
       <ExcludeApp ID="Groove" />
       <ExcludeApp ID="Lync" />
       <ExcludeApp ID="Bing" />
@@ -12,7 +13,15 @@
   <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
   <Property Name="DeviceBasedLicensing" Value="0" />
   <Property Name="SCLCacheOverride" Value="0" />
-  <Updates Enabled="TRUE" />
+  <RemoveMSI>
+    <IgnoreProduct ID="InfoPath" />
+    <IgnoreProduct ID="InfoPathR" />
+    <IgnoreProduct ID="PrjPro" />
+    <IgnoreProduct ID="PrjStd" />
+    <IgnoreProduct ID="SharePointDesigner" />
+    <IgnoreProduct ID="VisPro" />
+    <IgnoreProduct ID="VisStd" />
+  </RemoveMSI>
   <AppSettings>
     <Setup Name="Company" Value="CIMA PLUS" />
     <User Key="software\microsoft\office\16.0\excel\options" Name="defaultformat" Value="51" Type="REG_SZ" App="excel16" Id="L_SaveExcelfilesas" />
